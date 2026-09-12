@@ -6,7 +6,7 @@
    n = number of disks (labelled 1..n, 1 = smallest).
    4 pegs labelled 0,1,2,3. A peg's state is a stack (array)
    of disk sizes, smallest on top.
-
+   
    KEY IDEA (Frame-Stewart algorithm)
    --------
    With only 3 pegs the optimal move count is 2^n - 1.
@@ -27,7 +27,7 @@
    the puzzle's classic name "Reve's puzzle in 33 moves".
 
    COMPLEXITY
-   ----------
+   
    Computing f(1..n) via DP: O(n^2) time, O(n) space.
    Actually EXECUTING the moves (printing them) takes
    O(2^n) time in the worst 3-peg sub-calls -- inherent to the
